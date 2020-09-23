@@ -1,0 +1,36 @@
+{
+  "name": "mern-boiler-plate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "prod": "npm run build --prefix client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run start --prefix client\"",
+    "setup": "npm install && npm install --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.0",
+    "express-validator": "^6.4.0",
+    "helmet": "^3.22.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.10",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3"
+  }
+}
